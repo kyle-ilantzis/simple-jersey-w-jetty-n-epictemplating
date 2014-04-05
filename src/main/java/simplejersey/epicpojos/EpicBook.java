@@ -6,11 +6,20 @@ import java.util.List;
 
 public class EpicBook implements BeanTemplate {
 
+    private Integer id;
     private String title;
     private List<String> authors;
     private String description;
 
     public EpicBook() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId( Integer id ) {
+        this.id = id;
     }
 
     public String getTitle() {

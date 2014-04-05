@@ -6,20 +6,20 @@
     <h1>Plain Books</h1>
     <h2>epic-templating at its finest</h2>
 
-    <#if books?empty #>
+    <#if books?size == 0 >
         <p>Looks like there are no books.</p>
-    <#elseif>
+    <#else>
         <ul>
-            <#for book in books>
+            <#list books as book>
                 <li>
-                    <h3>${ book.title }</h3>
+                    <h3><a href="book/${ book.id }">${ book.title }</a></h3>
                     <ul>
-                        <#for author in book.authors>
+                        <#list book.authors as author>
                             <li>${ author }</li>
-                        </#for>
+                        </#list>
                     </ul>
                 </li>
-            </#for>
+            </#list>
         </ul>
     </#if>
 </body>

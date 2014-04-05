@@ -15,6 +15,7 @@ public class Books {
         List<PlainBook> pbs = new ArrayList<PlainBook>(3);
 
         PlainBook pb = new PlainBook();
+        pb.setId( 101 );
         pb.setTitle( "Learn You a Haskell for Great Good! A Beginner's Guide" );
         pb.setAuthors( Collections.singletonList( "Miran Lipovaca" ) );
         pb.setDescription(
@@ -26,6 +27,7 @@ public class Books {
         pbs.add(pb);
 
         pb = new PlainBook();
+        pb.setId( 13 );
         pb.setTitle( "Programming: Principles and Practice Using C++" );
         pb.setAuthors( Collections.singletonList( "Bjarne Stroustrup" ) );
         pb.setDescription(
@@ -36,6 +38,7 @@ public class Books {
         pbs.add(pb);
 
         pb = new PlainBook();
+        pb.setId( 19 );
         pb.setTitle( "Design Patterns: Elements of Reusable Object-Oriented Software" );
         pb.setAuthors( Arrays.asList( "Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides" ) );
         pb.setDescription(
@@ -63,5 +66,23 @@ public class Books {
         }
 
         return ebs;
+    }
+
+    public static PlainBook getPlainBookById( int id ) {
+
+        List<PlainBook> pbs = getPlainBooks();
+        for ( PlainBook pb : pbs ) {
+            if (pb.getId() == id) { return pb; }
+        }
+        return null;
+    }
+
+    public static EpicBook getEpicBookById( int id ) {
+
+        List<EpicBook> ebs = getEpicBooks();
+        for ( EpicBook eb : ebs ) {
+            if (eb.getId() == id) { return eb; }
+        }
+        return null;
     }
 }

@@ -4,11 +4,20 @@ import java.util.List;
 
 public class PlainBook {
 
+    private Integer id;
     private String title;
     private List<String> authors;
     private String description;
 
     public PlainBook() {
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId( Integer id ) {
+        this.id = id;
     }
 
     public String getTitle() {
