@@ -21,7 +21,6 @@ public class App
         final RenderingEngine re = new RenderingEngine();
 
         // Since we are not using a dependency manager like guice we make our own Provider.
-        // We need this just a little bit below.
         Provider<RenderingEngine> pre = new Provider<RenderingEngine>() {
             public RenderingEngine get() {
                 return re;

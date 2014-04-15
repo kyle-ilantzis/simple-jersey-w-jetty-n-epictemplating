@@ -2,6 +2,9 @@ package simplejersey.pojos;
 
 import java.util.List;
 
+/**
+ * Just a regular old POJO
+ */
 public class PlainBook {
 
     private Integer id;

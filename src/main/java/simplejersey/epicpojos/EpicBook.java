@@ -4,6 +4,10 @@ import epic.templating.BeanTemplate;
 
 import java.util.List;
 
+/**
+ * An EpicBook is a BeanTemplate which is an Element.
+ * A BeanTemplate knows how to render itself. see EpicBook.ftl
+ */
 public class EpicBook implements BeanTemplate {
 
     private Integer id;

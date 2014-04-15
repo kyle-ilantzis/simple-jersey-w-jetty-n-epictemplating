@@ -8,6 +8,10 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+/**
+ * A HelloWorldResource is a BeanTemplate which is an Element.
+ * A BeanTemplate knows how to render itself. see HelloWorldResource.ftl
+ */
 @Path("")
 public class HelloWorldResource implements BeanTemplate {
 

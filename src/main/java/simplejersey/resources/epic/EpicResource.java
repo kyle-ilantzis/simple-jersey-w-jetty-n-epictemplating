@@ -14,6 +14,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
+/**
+ * This resource demonstrates BeanTemplates.
+ */
 @Path( "epicHello" )
 public class EpicResource {
 

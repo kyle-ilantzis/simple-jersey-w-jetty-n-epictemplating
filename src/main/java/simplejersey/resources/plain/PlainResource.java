@@ -14,6 +14,9 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
+/**
+ * This resource demonstrates MapTemplates
+ */
 @Path( "plainHello" )
 public class PlainResource {
 

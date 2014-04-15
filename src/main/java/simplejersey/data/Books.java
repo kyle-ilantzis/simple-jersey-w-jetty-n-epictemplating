@@ -8,6 +8,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * A simple data source
+ */
 public class Books {
 
     public static List<PlainBook> getPlainBooks() {

@@ -1,3 +1,4 @@
+<#-- A BeanTemplate ftl file has access to it's instance properties directly -->
 <!doctype html>
 <html>
 <head>

@@ -3,6 +3,11 @@ package simplejersey.epicpage;
 import epic.templating.BeanTemplate;
 import epic.templating.Element;
 
+/**
+ * This example demonstrates an over architectured composite pattern to render web pages.
+ * A Body is a BeanTemplate which is an Element.
+ * A BeanTemplate knows how to render itself. see Body.ftl
+ */
 public class Body implements BeanTemplate {
 
     private String  title;
